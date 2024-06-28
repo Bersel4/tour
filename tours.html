@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+    <title>Paradise Found Travel</title>
+    <style>
+    *,
+    *::before,
+    *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol';
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .itc-slider__items {
+      counter-reset: slide;
+    }
+
+    .itc-slider__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      counter-increment: slide;
+      height: 250px;
+      position: relative;
+    }
+
+    .itc-slider__item::before {
+      content: counter(slide) "/5";
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .itc-slider__item:nth-child(1) {
+      background-color: #f44336;
+    }
+
+    .itc-slider__item:nth-child(2) {
+      background-color: #9c27b0;
+    }
+
+    .itc-slider__item:nth-child(3) {
+      background-color: #3f51b5;
+    }
+
+    .itc-slider__item:nth-child(4) {
+      background-color: #03a9f4;
+    }
+
+    .itc-slider__item:nth-child(5) {
+      background-color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+
+    
+        <!--===========Nav Bar=================-->
+        <section class="nav-bar">
+            <div class="logo">Paradise Found Travel</div>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tours.html">Туры</a></li>
+                <li><a href="gallery.html">Галлерея</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="#">связаться с нами</a></li>
+            </ul>
+            </div>
+        </section>
+    <!--==============Places===================-->
+    <section class="places">
+        <div class="places-text">
+            <small>FEATURED TOURS PACKAGES</small>
+            <h2>Favourite Places</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="img/bg-image.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>London</h2>
+                    <p class="cost">$1870 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 3 Days</p>
+                        <p class="location">✈ Vancouver, Canada</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293755/paris_uj8wum.jpg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Canada</h2>
+                    <p class="cost">$1870 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 3 Days</p>
+                        <p class="location">✈ Paris, France</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293955/monaco_usu7xb.jpg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Monaco</h2>
+                    <p class="cost">$1870 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 3 Days</p>
+                        <p class="location">✈ Monaco, Monaco</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img
+                            src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293874/switzerland_tubxcm.jpg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>France</h2>
+                    <p class="cost">$1870 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 3 Days</p>
+                        <p class="location">✈ Bern, Switzerland</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293673/korea_bxrcj5.jpg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Japan</h2>
+                    <p class="cost">$1870 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 3 Days</p>
+                        <p class="location">✈ Seoul, South Korea</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="zoom-img">
+                    <div class="img-card">
+                        <img
+                            src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293673/night-4336403_1920_demehp.jpg">
+                    </div>
+                </div>
+
+                <div class="text">
+                    <span class="rating">⭐⭐⭐⭐⭐</span>
+                    <h2>Seoul</h2>
+                    <p class="cost">$1870 / Per Person</p>
+                    <div class="card-box">
+                        <p class="time">🕓 3 Days</p>
+                        <p class="location">✈ Tokyo, japan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!--===========Footer=================-->
+       <div class="footer">
+        <div class="links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Offers & Discounts</li>
+                <li>Get Coupon</li>
+                <li>Contact Us</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>New Products</h3>
+            <ul>
+                <li>Woman Cloth</li>
+                <li>Fashion Accessories</li>
+                <li>Man Accessories</li>
+                <li>Rubber made Toys</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>Support</h3>
+            <ul>
+                <li>Frequently Asked Questions</li>
+                <li>Report a Payment Issue</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
