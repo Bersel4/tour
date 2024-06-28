@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Found Travel</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!--===========Nav Bar=================-->
+     <section class="nav-bar">
+        <div class="logo">Paradise Found Travel</div>
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="tours.html">Туры</a></li>
+            <li><a href="gallery.html">Галлерея</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="#">связаться с нами</a></li>
+        </ul>
+        </div>
+    </section>
+
+
+    <div class="go-top">
+        <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+            <!-- header section start -->
+
+            <header>
+
+                <section class="gallery" id="gallery">
+                    <h2 class="heading"><span>Outdoor</span> Recreation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nesciunt facere natus velit dolorem quis rem error perspiciatis. Suscipit, in.</p>
+    
+                        <div class="img-container">
+                            <div class="img-box">
+                                <img src="img/gallery_1.jpg">
+                            </div>
+                            <div class="img-box">
+                                <img src="img/gallery_2.jpg">
+                            </div>
+                            <div class="img-box">
+                                <img src="img/gallery_3.jpg">
+                            </div>
+                            <div class="img-box">
+                                <img src="img/gallery_4.jpg">
+                            </div>
+                            <div class="img-box">
+                                <img src="img/gallery_5.jpg">
+                            </div>
+                            <div class="img-box">
+                                <img src="img/gallery_6.jpg">
+                            </div>
+                            <div class="img-box">
+                                <img src="img/gallery_7.jpg">
+                            </div>
+                            <div class="img-box">
+                                <img src="img/gallery_8.jpg">
+                            </div>
+                        </div>
+                </section>
+    
+                   <!--===========Footer=================-->
+    <div class="footer">
+        <div class="links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Offers & Discounts</li>
+                <li>Get Coupon</li>
+                <li>Contact Us</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>New Products</h3>
+            <ul>
+                <li>Woman Cloth</li>
+                <li>Fashion Accessories</li>
+                <li>Man Accessories</li>
+                <li>Rubber made Toys</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>Support</h3>
+            <ul>
+                <li>Frequently Asked Questions</li>
+                <li>Report a Payment Issue</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+
+        document.querySelectorAll('.img-container .img-box img').forEach(img =>{
+            img.onclick = () => {
+                document.querySelector('.pop-up').style.display = 'block';
+                document.querySelector('.pop-up img').src = img.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.pop-up span').onclick = () => {
+                document.querySelector('.pop-up').style.display = 'none';
+            }
+
+
+    </script>
+</body>
+</html>
